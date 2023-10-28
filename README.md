@@ -30,7 +30,7 @@ I've included a checklist that you can use to work through the list below:
 
 ### Array
 
-- [ ] Two Sum - [https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)
+- [x] Two Sum - [https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)
 - [ ] Best Time to Buy and Sell Stock - [https://leetcode.com/problems/best-time-to-buy-and-sell-stock/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 - [ ] Contains Duplicate - [https://leetcode.com/problems/contains-duplicate/](https://leetcode.com/problems/contains-duplicate/)
 - [ ] Product of Array Except Self - [https://leetcode.com/problems/product-of-array-except-self/](https://leetcode.com/problems/product-of-array-except-self/)
