@@ -1,15 +1,16 @@
 package add_two_numbers_2
 
 import (
+	"testing"
+
 	"github.com/austingebauer/go-leetcode/structures"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 func Test_addTwoNumbers(t *testing.T) {
 	type args struct {
-		l1 *structures.ListNode
-		l2 *structures.ListNode
+		l1 []int
+		l2 []int
 	}
 	tests := []struct {
 		name string
