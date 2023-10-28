@@ -1,15 +1,16 @@
 package two_sum_1
 
 func twoSum(nums []int, target int) []int {
-	l := len(nums)
-	for i := 0; i < l; i++ {
-		a := nums[i]
+	checked := map[int]int{}
 
-		for j := i + 1; j < l; j++ {
-			b := nums[j]
-			if a+b == target {
-				return []int{i, j}
-			}
+	for idx, n := range nums {
+		missing := target - n
+
+		missingIdx, ok := checked[missing]
+		if ok {
+			return []int{missingIdx, idx}
+		} else {
+			checked[n] = idx
 		}
 	}
 
