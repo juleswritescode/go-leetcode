@@ -17,8 +17,14 @@ func reverseList(current *s.ListNode) (head *s.ListNode) {
 	return head
 }
 
-func reverseListRecur(head *s.ListNode) *s.ListNode {
-	if head.Next == nil {
-		return head
+func reverseListRecur(current *s.ListNode) *s.ListNode {
+	if current == nil || current.Next == nil {
+		return current
 	}
+
+	newHead := reverseListRecur(current.Next)
+	current.Next.Next = current
+	current.Next = nil
+
+	return newHead
 }

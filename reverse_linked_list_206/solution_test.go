@@ -45,6 +45,8 @@ func Test_reverseList(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			r1 := unmakeLL(reverseList(makeLL(tt.args)))
 			assert.Equal(t, tt.want, r1)
+			r2 := unmakeLL(reverseListRecur(makeLL(tt.args)))
+			assert.Equal(t, tt.want, r2)
 		})
 	}
 }
