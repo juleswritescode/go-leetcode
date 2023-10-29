@@ -25,31 +25,26 @@ func Test_reverseList(t *testing.T) {
 			args: []int{1, 2, 3, 4, 5},
 			want: []int{5, 4, 3, 2, 1},
 		},
-		// {
-		// 	name: "reverse linked list",
-		// 	args: []int{1},
-		// 	want: []int{1},
-		// },
-		// {
-		// 	name: "reverse linked list",
-		// 	args: []int{},
-		// 	want: []int{},
-		// },
-		// {
-		// 	name: "reverse linked list",
-		// 	args: []int{1, 2},
-		// 	want: []int{2, 1},
-		// },
+		{
+			name: "reverse linked list",
+			args: []int{1},
+			want: []int{1},
+		},
+		{
+			name: "reverse linked list",
+			args: []int{},
+			want: []int{},
+		},
+		{
+			name: "reverse linked list",
+			args: []int{1, 2},
+			want: []int{2, 1},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			ll := makeLL(tt.args)
-
-			r := reverseList(ll)
-
-			slc := unmakeLL(r)
-
-			assert.Equal(t, tt.want, slc)
+			r1 := unmakeLL(reverseList(makeLL(tt.args)))
+			assert.Equal(t, tt.want, r1)
 		})
 	}
 }
