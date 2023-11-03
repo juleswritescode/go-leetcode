@@ -129,7 +129,7 @@ I've included a checklist that you can use to work through the list below:
 
 ### Tree
 
-- [ ] Maximum Depth of Binary Tree - [https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+- [x] Maximum Depth of Binary Tree - [https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 - [ ] Same Tree - [https://leetcode.com/problems/same-tree/](https://leetcode.com/problems/same-tree/)
 - [ ] Invert/Flip Binary Tree - [https://leetcode.com/problems/invert-binary-tree/](https://leetcode.com/problems/invert-binary-tree/)
 - [ ] Binary Tree Maximum Path Sum - [https://leetcode.com/problems/binary-tree-maximum-path-sum/](https://leetcode.com/problems/binary-tree-maximum-path-sum/)

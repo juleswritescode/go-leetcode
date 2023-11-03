@@ -1,8 +1,9 @@
 package sum_of_two_integers_371
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_getSum(t *testing.T) {
@@ -16,7 +17,7 @@ func Test_getSum(t *testing.T) {
 		want int
 	}{
 		{
-			name: "sum of two integers",
+			name: "sum of two integers, 2 3",
 			args: args{
 				a: 2,
 				b: 3,
@@ -24,7 +25,7 @@ func Test_getSum(t *testing.T) {
 			want: 5,
 		},
 		{
-			name: "sum of two integers",
+			name: "sum of two integers, 1 2",
 			args: args{
 				a: 1,
 				b: 2,
@@ -32,7 +33,7 @@ func Test_getSum(t *testing.T) {
 			want: 3,
 		},
 		{
-			name: "sum of two integers",
+			name: "sum of two integers, -2 3",
 			args: args{
 				a: -2,
 				b: 3,
@@ -40,7 +41,7 @@ func Test_getSum(t *testing.T) {
 			want: 1,
 		},
 		{
-			name: "sum of two integers",
+			name: "sum of two integers, -2 -3",
 			args: args{
 				a: -2,
 				b: -3,
